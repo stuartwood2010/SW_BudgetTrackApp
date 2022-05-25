@@ -13,6 +13,7 @@ const typeDefs = gql`
         dateCreated: Date
         month: String
         expenses: [Expense]
+        income: [Income]
         userId: User
     }
 

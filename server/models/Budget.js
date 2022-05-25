@@ -18,6 +18,12 @@ const budgetSchema = new Schema({
             ref: 'Expense', 
         }
     ],
+    income: [
+        {
+            type: Schema.Types.ObjectId,
+            ref: 'Income', 
+        }
+    ],
     userId: {
 		type: Schema.Types.ObjectId,
 		ref: 'User',
