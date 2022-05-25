@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
 
-mongoose.connect('mongodb://localhost:27017/graphqlTodos', {
+mongoose.connect('mongodb://localhost:27017/budgetTrackApp', {
 	useNewUrlParser: true,
 	useUnifiedTopology: true,
 });
