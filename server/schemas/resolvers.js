@@ -1,6 +1,6 @@
 const {AuthorizationError} = require('apollo-server-express');
 const {Todo, User} = require('../models');
-const utils = require('../utils');
+const utils = require('../utils/jwt');
 
 const resolvers = {
 	Query: {
@@ -70,9 +70,6 @@ const resolvers = {
 		fullName: (root) => {
 			console.log('I AM ROOT',root);
 			return `${root.firstName} ${root.lastName}`;
-		},
-		nameLength: (root) => {
-			return root.firstName.length;
 		},
 		todos: async  (root) => {
 			return await Todo.find({

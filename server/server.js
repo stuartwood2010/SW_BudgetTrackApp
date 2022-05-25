@@ -25,8 +25,6 @@ const server = new ApolloServer({
 
 		return {
 			req,
-			coolestGuyInTheWorld: 'Manny',
-			someNerd: 'Matthew',
 		};
 	},
 });
